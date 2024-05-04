@@ -27,8 +27,9 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        
         script: |
-          cd /path/to/your/api
+          cd /apis/nodejsapis
           git pull origin main
           npm install
           pm2 restart app.js
